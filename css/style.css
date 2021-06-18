@@ -1,0 +1,104 @@
+/* || GENERAL STYLES */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  width: 75%;
+  margin: 0 auto;
+  background-color: #fff;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+h1,
+h2,
+h3 {
+  font-family: 'Source Code Pro', monospace;
+}
+h2 {
+  display: flex;
+}
+h2::before,
+h2::after {
+  content: '';
+  flex: 1;
+  border-bottom: #000 solid 2px;
+  margin: auto;
+}
+h2::before {
+  margin-right: 20px;
+}
+h2::after {
+  margin-left: 20px;
+}
+a {
+  color: #000;
+  text-decoration: none;
+  border-bottom: #cdaf95 solid 2px;
+}
+a:hover {
+  border-bottom-color: #eecbad;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+/* || HEADER */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile-img {
+  margin-top: 50px;
+  border-radius: 50%;
+}
+header p {
+  margin: 0 0 16px;
+}
+/* || PORTFOLIO */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 10px;
+}
+.card-img {
+  width: 100%;
+  height: auto;
+}
+.card-header {
+  border-bottom: none;
+}
+.card-header:hover {
+  border-bottom: #eecbad solid 2px;
+}
+.card-description {
+  margin: 1em;
+}
+.tools-list {
+  font-family: 'Source Code Pro', monospace;
+}
+/* || CONTACT */
+.contact-container {
+  display: flex;
+  justify-content: center;
+}
+.icon {
+  margin-left: 15px;
+  padding-bottom: 1px;
+  border-bottom: none;
+}
+.icon:hover {
+  border-bottom: #eecbad solid 2px;
+}
+ul li:first-child .icon {
+  margin-left: 0; /* removes space from first icon */
+}
+/* || FOOTER */
+footer {
+  margin: 40px 0 20px;
+}
