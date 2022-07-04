@@ -49,14 +49,10 @@ ul {
 }
 /* || HEADER */
 header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-top: 100px;
+  text-align: start;
 }
-.profile-img {
-  margin-top: 50px;
-  border-radius: 50%;
-}
+
 header p {
   margin: 0 0 16px;
 }
