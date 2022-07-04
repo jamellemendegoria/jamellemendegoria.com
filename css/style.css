@@ -50,11 +50,10 @@ ul {
 /* || HEADER */
 header {
   margin-top: 100px;
-  text-align: start;
 }
 
 header p {
-  margin: 0 0 16px;
+  margin: 0 0 50px;
 }
 /* || PORTFOLIO */
 .card-container {
